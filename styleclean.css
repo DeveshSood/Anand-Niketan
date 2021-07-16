@@ -3,12 +3,20 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border-radius: 15px;
+    margin: 10px;
   }
   
   .row{
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+  
+  .text{
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
   }
   
   HR{
@@ -18,7 +26,7 @@
   body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image:url(images/bk.png);
+    background:rgb(200, 170, 0);
     background-size: cover;
     background-attachment: fixed;
   }
@@ -28,13 +36,13 @@
   }
   
   p{
-    font-size: 30px;
+    background-color: rgb(112, 12, 184);
+    margin: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 14px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
-    background-color: cornsilk;
-    border-radius: 8px;
-    margin: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
   }
   
   img {
@@ -44,14 +52,7 @@
     border-style:ridge;
     border-width: thick;
   }
-  
-  .logo-image{
-    overflow: hidden;
-    margin-top: -12px;
-    margin-bottom: -10px;
-    border-style: none;
-  }
-  
+
   #myBtn{
     display: none;
     position: fixed;
@@ -73,7 +74,7 @@
   }
   
   .header{
-    background-color: gold;
+    background-color: lightblue;
     display: flex;
     justify-content: space-between;
   }
@@ -162,7 +163,3 @@
       display: table;
       clear: both;
     }
-  /*
-  Style for DF Messenger
-  style="--df-messenger-bot-message: rgb(39, 119, 248); --df-messenger-button-titlebar-color: #5704dd; --df-messenger-button-titlebar-font-color: rgb(255, 0, 0); --df-messenger-chat-background-color: rgb(122, 121, 121); --df-messenger-font-color: rgba(0,0,0,.87); --df-messenger-input-box-color: rgb(0, 255, 234); --df-messenger-input-font-color: rgb(0, 15, 230); --df-messenger-input-placeholder-font-color: #ce1596; --df-messenger-minimized-chat-close-icon-color: rgba(0,0,0,.87); --df-messenger-send-icon: #e9f542; --df-messenger-user-message: rgb(171, 209, 0); --df-messenger-chip-color: 1000px solid rgb(82, 0, 190); --df-messenger-chip-border-color: #0004ff;"
-  */

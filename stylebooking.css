@@ -4,6 +4,13 @@
     flex-wrap: wrap;
 }
 
+.text{
+    background-color: cornsilk;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
 HR{
     height:7px;border-width:7; color:rgb(42, 156, 19);background-color:rgb(52, 20, 195);
 }

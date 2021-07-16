@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Home - ANAND NIKETAN</Title>
+        <link
+            rel="StyleSheet";
+            type="text/css";
+            href="styleclean.css";
+
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/AN.png" type="image/png">
+    </Head>
+    <Body align="center">
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
+
+    <script>
+        var mybutton = document.getElementById("myBtn");
+            
+        window.onscroll = function() {scrollFunction()};
+            
+        function scrollFunction() {
+            if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+                mybutton.style.display = "block";
+            } 
+
+            else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="header">
+        <H1>&ensp;<img style="border: none; width: 20px; border-radius: 0px;" src="https://img.icons8.com/material-outlined/24/000000/sparkling.png"/> Cleaning :-</H1>
+        <div class="menu">
+            <A href="index.html"><img style="border: none" src="images/home.png" width=40 height=30/></a>
+        </div>
+    </div>  
+
+    <div class="text">
+        <P><font color="aqua">
+            Here’s what Pratyush has made a commitment to do before every stay :-
+        </font></P>
+    </div>
+
+    <P><font color="cornsilk">
+        <BR>
+        1.Sanitise surfaces :-<BR>
+            Sanitise every high-touch surface, down to the doorknob.<BR><BR>
+        2.Use approved products :-<BR>
+        Use cleaners approved by health experts, such as disinfectants with 70% alcohol or higher<BR><BR>
+        3.Thoroughly clean :-<BR>
+            Refer to our extensive checklists while cleaning room by room<BR><BR>
+        4.Wear a mask and gloves :-<BR>
+            Help avoid cross-contamination by wearing a mask and gloves.<BR><BR>
+        5.Wash all linen :-<BR>
+            Wash linen at a high heat setting.<BR><BR>
+        6.Follow all other local guidance :-<BR>
+            Comply with local laws, including any additional safety or cleaning guidelines<BR><BR><BR>
+        </font></P>
+    <body oncopy="return false" onpaste="return false" oncut="return false"></body>
+    </Body>
+</HTML>
