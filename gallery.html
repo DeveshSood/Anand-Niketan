@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Title>Gallery</Title>
+        <link rel="icon" href="images/ANN.png" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            rel="StyleSheet";
+            type="text/css";
+            href="stylegallery.css";
+        />
+    </Head>
+    <Body align = "center">
+        <div class="navbar"  id="myTopnav">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo-image">
+                  <img style="border: none;" src="images/ANN.png">
+            </div>
+          </a>
+          </a>
+            <A href="index.html">Home</A>
+            <A href="booking.html">Booking</A>
+            <A href="aboutus.html">About Us</A>
+            <A href="gallery.html" class="active">Gallery</A>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
+
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+        <div class="header">
+            <H1>Gallery :-</H1>
+            <div class="menu">
+              <A href="aboutus.html"><img style="border: none" src="images/goback.png" width=40 height=20/></A>
+              <A href="index.html"><img style="border: none" src="images/home.png" width=40 height=30/></a>
+            </div>
+        </div>
+        <BR>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="images/bdroom1.jpeg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/bedroom1wide.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/bedroomwallpaper.jpg" style="width:50%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="images/workingarea.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/workingareawide.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/workingareawallpaper.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/kitchen.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/bathroom.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/balcony.png" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/View.jpeg" style="width:50%">
+          </div>
+        
+          <div class="mySlides1">
+            <img src="images/exterior1h.jpeg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/exterior2h.jpeg" style="width:50%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="images/exteriorh.jpeg" style="width:50%">
+          </div>
+          <BR>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+          <BR>
+        </div>
+
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+          
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}    
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex[no]-1].style.display = "block";  
+          }
+        </script>
+
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+          <df-messenger style="--df-messenger-bot-message: rgb(39, 119, 248); --df-messenger-button-titlebar-color: #5704dd; --df-messenger-button-titlebar-font-color: rgb(255, 0, 0); --df-messenger-chat-background-color: rgb(122, 121, 121); --df-messenger-font-color: rgba(0,0,0,.87); --df-messenger-input-box-color: rgb(0, 255, 234); --df-messenger-input-font-color: rgb(0, 15, 230); --df-messenger-input-placeholder-font-color: #ce1596; --df-messenger-minimized-chat-close-icon-color: rgba(0,0,0,.87); --df-messenger-send-icon: #e9f542; --df-messenger-user-message: rgb(171, 209, 0); --df-messenger-chip-color: 1000px solid rgb(82, 0, 190); --df-messenger-chip-border-color: #0004ff;"
+            chat-title="ChatWithUs"
+            agent-id="62362cd6-ad72-4fe8-b6db-6bccc5e82d00"
+            language-code="en"
+          >
+      </df-messenger>
+
+        <HR width="100%" color = "darkblue">
+
+    </Body>
+</HTML>

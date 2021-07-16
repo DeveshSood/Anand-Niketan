@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<HTML>
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <Title>Home - ANAND NIKETAN</Title>
+        <link
+            rel="StyleSheet";
+            type="text/css";
+            href="style.css";
+
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/AN.png" type="image/png">
+    </Head>
+    <Body align="center">
+        <div class="navbar"  id="myTopnav">
+            <a class="navbar-brand" href="index.html">
+              <div class="logo-image">
+                    <img style="border: none;" src="images/ANN.png">
+              </div>
+            </a>
+            <A href="index.html" class="active">Home</A>
+            <A href="booking.html">Booking</A>
+            <A href="aboutus.html">About Us</A>
+            <A href="gallery.html">Gallery</A>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
+
+        <button onclick="topFunction()" id="myBtn" title="Go To Top">⇧</button>
+
+        <script>
+            var mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+          <df-messenger style="--df-messenger-bot-message: rgb(39, 119, 248); --df-messenger-button-titlebar-color: #5704dd; --df-messenger-button-titlebar-font-color: rgb(255, 0, 0); --df-messenger-chat-background-color: rgb(122, 121, 121); --df-messenger-font-color: rgba(0,0,0,.87); --df-messenger-input-box-color: rgb(0, 255, 234); --df-messenger-input-font-color: rgb(0, 15, 230); --df-messenger-input-placeholder-font-color: #ce1596; --df-messenger-minimized-chat-close-icon-color: rgba(0,0,0,.87); --df-messenger-send-icon: #e9f542; --df-messenger-user-message: rgb(171, 209, 0); --df-messenger-chip-color: 1000px solid rgb(82, 0, 190); --df-messenger-chip-border-color: #0004ff;"
+            chat-title="ChatWithUs"
+            agent-id="62362cd6-ad72-4fe8-b6db-6bccc5e82d00"
+            language-code="en"
+          >
+        </df-messenger>
+
+        <HR color = "darkblue">
+
+        <div class="main">
+            <A href="aboutus.html"><font color ="black" size ="12">Anand Niketan</A></font>
+        </div>
+
+        <div class="main">
+          <A href="aboutus.html"><font color ="black" size ="5">(One BHK) For Your Comfy Stay</A></font>
+        </div>
+
+        <HR color = "darkblue">
+
+            <div class="row">
+                <div class="column">
+                  <img src="images/bdroom1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/View.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="images/exterior1h.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 15</div>
+                    <img src="images/bdroom1.jpeg" style="width:80%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 15</div>
+                    <img src="images/View.jpeg" style="width:80%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 15</div>
+                    <img src="images/exterior1h.jpeg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 15</div>
+                    <img src="images/bedroom1wide.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 15</div>
+                    <img src="images/bedroomwallpaper.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 15</div>
+                    <img src="images/workingarea.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 15</div>
+                    <img src="images/workingareawide.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">8 / 15</div>
+                    <img src="images/workingareawallpaper.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">9 / 15</div>
+                    <img src="images/kitchen.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">10 / 15</div>
+                    <img src="images/bathroom.jpg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">11 / 15</div>
+                    <img src="images/bthroom2.jpeg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">12 / 15</div>
+                    <img src="images/exteriorh.jpeg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">13 / 15</div>
+                    <img src="images/exterior2h.jpeg" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">14 / 15</div>
+                    <img src="images/balcony.png" style="width:80%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">15 / 15</div>
+                    <img src="images/View.jpeg" style="width:80%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/bdroom1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Bedroom 1 (Double Bed)">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/View.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Balcony">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/exterior1h.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Snowfall View">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/bedroom1wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bedroom 1 (Wide View)">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/bedroomwallpaper.jpg" style="width:100%" onclick="currentSlide(5)" alt="Bedroom 1 Wallpaper">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/workingarea.jpg" style="width:100%" onclick="currentSlide(6)" alt="Working Area + 2nd Bedroom">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/workingareawide.jpg" style="width:100%" onclick="currentSlide(7)" alt="Working Area 2nd View">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/workingareawallpaper.jpg" style="width:100%" onclick="currentSlide(8)" alt="Working Area Wallpaper">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/kitchen.jpg" style="width:100%" onclick="currentSlide(9)" alt="Full Kitchen">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/bathroom.jpg" style="width:100%" onclick="currentSlide(10)" alt="Full Bathroom">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/bthroom2.jpeg" style="width:100%" onclick="currentSlide(11)" alt="Bathroom With Geyser">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/exteriorh.jpeg" style="width:100%" onclick="currentSlide(12)" alt="View From Balcony">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/exterior2h.jpeg" style="width:100%" onclick="currentSlide(13)" alt="View From Balcony">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/balcony.png" style="width:100%" onclick="currentSlide(14)" alt="Balcony">
+                  </div>
+                  <div class="indeximg">
+                    <img class="demo cursor" src="images/View.jpeg" style="width:100%" onclick="currentSlide(15)" alt="Flat Outer View">
+                  </div>
+                </div>
+              </div>
+              
+              <script>
+              function openModal() {
+                document.getElementById("myModal").style.display = "block";
+              }
+              
+              function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+              }
+              
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
+        
+        <HR color = "black">
+
+        <HR color = "green" width = 70%>
+        <div class="head">
+          <font color ="lightblue" size ="7"><B>BNB (Bed And Breakfast) :-</B></font>
+        </div>
+        <HR color = "green" width = 70%>
+
+        <BR>
+        <div class="text"><p>
+          Welcome to "Anand Niketan - Website". We are here at your sevice please let us know if <BR>you want to Book Or Reserve the room.<BR><BR>
+          3 guests · 2 bedrooms · 2 beds · 1.5 bathrooms<BR><BR>
+          <img style="border: none; width: 20px; border-radius: 0px;" src="https://img.icons8.com/ios/50/000000/home--v3.png"/>
+          Entire home -
+          You’ll have the condominium to yourself.<BR>
+          <img style="border: none; width: 20px; border-radius: 0px;" src="https://img.icons8.com/material-outlined/24/000000/sparkling.png"/>
+           Enhanced clean Home+ Safety (Regarding COVID-19)<BR> <a href="clean.html">Show more.</a><BR>
+          <img style="border: none; width: 20px; border-radius: 0px;" src="https://img.icons8.com/ios/50/000000/pets--v1.png"/>
+          Pets are allowed(Guests often search for this amenity).
+        </p></div>      
+        <HR color = "darkblue">
+    </Body>
+</HTML>
