@@ -18,6 +18,11 @@
     margin-right: 0px;
     border-radius: 10px;
   }
+
+  .bottom{
+    background-color: rgb(37, 37, 37);
+    margin-bottom: -1000px;
+  }
   
   HR{
     height:7px;border-width:7; color:rgb(42, 156, 19);background-color:rgb(52, 20, 195)"

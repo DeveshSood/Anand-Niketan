@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="images/AN.png" type="image/png">
     </Head>
-    <Body align="center">
+    <Body oncopy="return false" onpaste="return false" oncut="return false" align="center">
         <div class="navbar"  id="myTopnav">
             <a class="navbar-brand" href="index.html">
               <div class="logo-image">
@@ -277,7 +277,7 @@
         <BR>
         <div class="text"><p><BR>
           <font color=" #C3447A">
-            Welcome to "Anand Niketan - Website". We are here at your sevice please let us know if <BR>you want to Book Or Reserve the room.<BR><BR>
+            Welcome to "Anand Niketan - Website". We are here at your sevice please let us know if <BR>you want to Book Or Reserve a room.<BR><BR>
             3 guests · 2 bedrooms · 2 beds · 1.5 bathrooms<BR><BR>
           </font>
           </p></div>
@@ -304,46 +304,13 @@
         </p></div>
 
         <div class="text"><p>
-          <font color="blue" style="font-size: 30px;">Places For Sleeping :-</font>
-          <div class="slideshow-container">
-            <div class="mySlides1">
-              <img src="images/bdroom1.jpeg" style="width:50%">
-            </div>
-          
-            <div class="mySlides1">
-              <img src="images/workingarea.jpg" style="width:50%">
-            </div>
-            <BR>
-            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            <BR>
-          </div>
-  
-          <script>
-            var slideIndex = [1,1];
-            var slideId = ["mySlides1", "mySlides2"]
-            showSlides(1, 0);
-            showSlides(1, 1);
-            
-            function plusSlides(n, no) {
-              showSlides(slideIndex[no] += n, no);
-            }
-            
-            function showSlides(n, no) {
-              var i;
-              var x = document.getElementsByClassName(slideId[no]);
-              if (n > x.length) {slideIndex[no] = 1}    
-              if (n < 1) {slideIndex[no] = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex[no]-1].style.display = "block";  
-            }
-          </script><BR><BR>
+          <font color="#663399" style="font-size: 30px;">Places For Sleeping :-</font><BR>
+          <a href="sleep.html">>Click Here<</a>
+          <BR>
         </p></div>
 
         <div class="offer"><p>
-          <font color="green" style="font-size: 30px;">&ensp;What this place offers :-<BR><BR></font><BR>
+          <font color="green" style="font-size: 30px;">&ensp;What this place offers :-<BR><BR></font>
           <font color="blue">&ensp;Bathroom - <BR><BR>
             &ensp;<img style="border: none; width: 23px; border-radius: 0px;" src="https://img.icons8.com/ios/24/000000/water.png"/> Bath<BR><BR>
             &ensp;<img style="border: none; width: 23px; border-radius: 0px;" src="https://img.icons8.com/ios/50/000000/sponge.png"/> Cleansing Products<BR><BR>
@@ -367,6 +334,10 @@
           </font><BR>
         </p></div>
         <HR color = "darkblue">
-        <body oncopy="return false" onpaste="return false" oncut="return false"></body>
+        <div class="bottom">
+          <P><font color="white" size="2" style="font-weight: bold">
+            This Website Has Been Made by - Devesh Sood. If You Want Me To Make A Website For You, Please Text Me On My Whatsapp No - 8091030647.
+          </font></P>
+        </div>
     </Body>
 </HTML>

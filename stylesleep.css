@@ -4,11 +4,9 @@
     flex-wrap: wrap;
 }
 
-.text{
-    background-color: cornsilk;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 10px;
+.bottom{
+    background-color: rgb(37, 37, 37);
+    margin-bottom: -1000px;
 }
 
 HR{
@@ -20,21 +18,19 @@ H3{
 }
 
 p{
+    background-color: honeydew;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
     font-size: 30px;
     color: rgb(0, 21, 209);
 }
 
 img {
-    border-style: groove;
-    border-color: blanchedalmond;
+    border-style:double;
+    border-color: blue;
     max-width:100%;
     height:auto;
-}
-
-.logo-image{
-  overflow: hidden;
-  margin-top: -12px;
-  margin-bottom: -10px;
 }
 
 #myBtn{
@@ -58,7 +54,7 @@ img {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 /* * {
@@ -66,15 +62,9 @@ h1 {
 } */
 
 .header{
-    background-color: rgb(207, 142, 21);
+    background-color: #EE82EE;
     display: flex;
     justify-content: space-between;
-}
-
-.site-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
 }
 
 .grid{
@@ -88,89 +78,73 @@ h1 {
     justify-content: flex-end;
 }
 
-.bottom{
-    background-color: rgb(37, 37, 37);
-    margin-bottom: -1000px;
-}
-
 p,h2{
     text-align: center;
 }
 
 body{
     margin: 0;
-    background-color: rgb(255, 0, 0);
-    background-image:url(images/bk.jpg);
+    background-color: rgb(107, 107, 107);
     color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
   }
 
-.navbar{
-    background-color: rgb(37,35,35);
-    overflow: hidden;
-}
-  
-.navbar a{
-    float: left;
-    display: block;
-    color: antiquewhite;
-    padding: 14px 30px;
-    text-align: center;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-  
-.navbar-right{
-    float: right;
-}
-  
-.navbar a:hover{
-    background-color: rgb(16, 223, 171);
-    color:black
-}
-  
-.navbar a.active{
-    background-color: rgb(16, 56, 144);
-    color:greenyellow
-}
-  
-.navbar .icon {
-    display: none;
-}
-  
-@media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-}
-  
-@media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
-    .navbar.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
-  
-A {
-    text-decoration: none;
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-img {vertical-align: middle;}
+.prev{
+    position: relative;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+} 
+
+.next {
+  position: relative;
+  cursor: pointer;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #08c6df;
+  color: rgb(98, 7, 182);
+  padding: 20px;
+}
 
 /*
 Style for DF Messenger
 style="--df-messenger-bot-message: rgb(39, 119, 248); --df-messenger-button-titlebar-color: #5704dd; --df-messenger-button-titlebar-font-color: rgb(255, 0, 0); --df-messenger-chat-background-color: rgb(122, 121, 121); --df-messenger-font-color: rgba(0,0,0,.87); --df-messenger-input-box-color: rgb(0, 255, 234); --df-messenger-input-font-color: rgb(0, 15, 230); --df-messenger-input-placeholder-font-color: #ce1596; --df-messenger-minimized-chat-close-icon-color: rgba(0,0,0,.87); --df-messenger-send-icon: #e9f542; --df-messenger-user-message: rgb(171, 209, 0); --df-messenger-chip-color: 1000px solid rgb(82, 0, 190); --df-messenger-chip-border-color: #0004ff;"
 */
-
